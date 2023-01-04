@@ -2,7 +2,7 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
 import { Navbar } from "./components/Navbar";
-import { Router, Routes, Route, BrowserRouter } from "react-router-dom";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
 import { Home } from "./pages/Home";
 import { TareasPage } from "./pages/TareasPage";
 import { Contact } from "./pages/Contact";

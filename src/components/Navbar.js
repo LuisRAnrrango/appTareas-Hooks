@@ -10,9 +10,9 @@ export const Navbar = () => {
 
   let activeclassNameName = "underline";
   return (
-    <nav id="navbarp" className="navbar navbar-expand-lg bg-body-tertiary">
+    <nav className="navbar navbar-expand-lg ">
       <div className="container-fluid">
-        <a className="navbar-brand" href="#">
+        <a className="navbar-brand" id="optionm" href="#">
           Kruger Start
         </a>
         <button
@@ -29,22 +29,42 @@ export const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <NavLink to="/home" className="nav-link">
+              <NavLink
+                to="/home"
+                id="optionm"
+                className="nav-link"
+                style={({ isActive }) => (isActive ? activeStyle : undefined)}
+              >
                 Home
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink to="/tareas" className="nav-link">
+              <NavLink
+                to="/tareas"
+                id="optionm"
+                className="nav-link"
+                style={({ isActive }) => (isActive ? activeStyle : undefined)}
+              >
                 Tareas
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink to="/about" className="nav-link">
+              <NavLink
+                to="/about"
+                id="optionm"
+                className="nav-link"
+                style={({ isActive }) => (isActive ? activeStyle : undefined)}
+              >
                 About
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink to="/contact" className="nav-link">
+              <NavLink
+                to="/contact"
+                id="optionm"
+                className="nav-link"
+                style={({ isActive }) => (isActive ? activeStyle : undefined)}
+              >
                 Contact
               </NavLink>
             </li>
