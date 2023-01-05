@@ -14,13 +14,36 @@
   );
 }
 .todoContainer {
-  text-align: center;
   align-items: center;
+  display: flex;
+  flex-direction: column;
 }
-.btn {
-  padding-right: 5px;
-  margin: 5px;
+.todoCreateForm {
+  display: flex;
+  gap: 5px;
 }
+
 .h2 {
   text-align: center;
+}
+.todosContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 10px;
+}
+.todo {
+  padding: 10px;
+  background-color: white;
+}
+
+.todoTitle {
+  flex: 1;
+  font-size: 20px;
+}
+.todoUpdateForm,
+.todoInfo {
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }

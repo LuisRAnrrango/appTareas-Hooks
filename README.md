@@ -11,11 +11,7 @@ In this repository you can find the code of a web application which was develope
 
 <img src='public\images\mockuptodo.png'>
 
-In the project directory, you can run:
-
 ## Built With
-
-### `npm start`
 
 - ReactJs
 - CSS
