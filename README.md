@@ -9,7 +9,7 @@ In this repository you can find the code of a web application which was develope
 
 ## Available Scripts
 
-<img src='public\images\mockuptodo.png'>
+<img src='public\images\Mockup-TODO.png'>
 
 ## Built With
 
@@ -44,7 +44,7 @@ Use the following steps to run this Portfolio locally:
 
 For a live demo please click on the following link:
 
-https://endearing-melb
+https://tourmaline-mermaid-6d7843.netlify.app/tareas
 
 ## Author
 
