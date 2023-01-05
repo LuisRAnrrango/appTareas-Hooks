@@ -8,11 +8,10 @@ export const Navbar = () => {
     textDecoration: "underline",
   };
 
-  let activeclassNameName = "underline";
   return (
     <nav className="navbar navbar-expand-lg ">
       <div className="container-fluid">
-        <a className="navbar-brand" id="optionm" href="#">
+        <a className="navbar-brand" id="optionm" href="localhost">
           Kruger Start
         </a>
         <button
