@@ -1,0 +1,49 @@
+#optionm {
+  color: aliceblue;
+}
+.navbar {
+  background: rgb(115, 15, 124);
+  background: linear-gradient(
+    90deg,
+    rgba(115, 15, 124, 1) 0%,
+    rgba(217, 217, 217, 1) 0%,
+    rgba(23, 28, 116, 1) 0%,
+    rgba(22, 31, 66, 1) 37%,
+    rgba(23, 23, 60, 1) 49%,
+    rgba(129, 13, 17, 1) 100%
+  );
+}
+.todoContainer {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.todoCreateForm {
+  display: flex;
+  gap: 5px;
+}
+
+.h2 {
+  text-align: center;
+}
+.todosContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 10px;
+}
+.todo {
+  padding: 10px;
+  background-color: white;
+}
+
+.todoTitle {
+  flex: 1;
+  font-size: 20px;
+}
+.todoUpdateForm,
+.todoInfo {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
