@@ -13,3 +13,14 @@
     rgba(129, 13, 17, 1) 100%
   );
 }
+.todoContainer {
+  text-align: center;
+  align-items: center;
+}
+.btn {
+  padding-right: 5px;
+  margin: 5px;
+}
+.h2 {
+  text-align: center;
+}
