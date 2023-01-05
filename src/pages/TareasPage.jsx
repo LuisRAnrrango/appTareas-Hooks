@@ -4,7 +4,7 @@ import TodoApp from "../components/TodoApp";
 export const TareasPage = () => {
   return (
     <>
-      <div>TareasPage</div>
+      <div className="h2">Crear Tareas</div>
       <TodoApp></TodoApp>
     </>
   );

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Todo from "./Todo";
 
 export default function TodoApp() {
-  const [title, setTitle] = useState("Hola");
+  const [title, setTitle] = useState("");
   const [todos, setTodos] = useState([]);
 
   function handleChange(e) {
@@ -20,6 +20,7 @@ export default function TodoApp() {
     temp.unshift(newTodo);
 
     setTodos(temp);
+    setTitle("");
   }
 
   function handleUpdate(id, value) {
@@ -29,16 +30,36 @@ export default function TodoApp() {
     setTodos(temp);
   }
 
+  function handleDelete(id) {
+    const temp = todos.filter((item) => item.id !== id);
+    setTodos(temp);
+  }
+
   return (
     <div className="todoContainer">
       <form className="todoCreateForm" onSubmit={handleSubmit}>
-        <input onChange={handleChange} className="todoInput" value={title} />
-        <input onClick={handleSubmit} type="submit" value="Create todo"></input>
+        <input
+          type="text"
+          onChange={handleChange}
+          className="todoInput"
+          value={title}
+        />
+        <input
+          onClick={handleSubmit}
+          type="submit"
+          value="Create todo"
+          class="btn btn-success"
+        ></input>
       </form>
 
       <div className="todosContainer">
         {todos.map((item) => (
-          <Todo key={item.id} item={item} onUpdate={handleUpdate} />
+          <Todo
+            key={item.id}
+            item={item}
+            onUpdate={handleUpdate}
+            onDelete={handleDelete}
+          />
         ))}
       </div>
     </div>

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-export default function Todo({ item,onUpdate }) {
+export default function Todo({ item, onUpdate, onDelete }) {
   const [isEdit, setIsEdit] = useState(false);
 
   //Declaracion de un componente dento de otro componente
@@ -15,9 +15,9 @@ export default function Todo({ item,onUpdate }) {
       setNewValue(value);
     }
 
-    function handleClickUpdateTodo(){
-onUpdate(item.id, newValue);
-setIsEdit(false);
+    function handleClickUpdateTodo() {
+      onUpdate(item.id, newValue);
+      setIsEdit(false);
     }
 
     return (
@@ -28,7 +28,9 @@ setIsEdit(false);
           onChange={handleChange}
           value={newValue}
         ></input>
-        <button className="buttom" onClick={handleClickUpdateTodo}>Update</button>
+        <button className="btn btn-secondary" onClick={handleClickUpdateTodo}>
+          Update
+        </button>
       </fom>
     );
   }
@@ -37,8 +39,12 @@ setIsEdit(false);
     return (
       <div className="todoInfo">
         {item.title}
-        <button onClick={() => setIsEdit(true)}>Editar</button>
-        <button>Delete</button>
+        <button className="btn btn-primary" onClick={() => setIsEdit(true)}>
+          Editar
+        </button>
+        <button class="btn btn-danger" onClick={(e) => onDelete(item.id)}>
+          Delete
+        </button>
       </div>
     );
   }
